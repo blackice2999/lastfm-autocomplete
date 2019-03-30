@@ -176,7 +176,7 @@
                             format: 'json'
                         };
                         optionSet[moduleList[key]] = request.term;
-                        $.get(baseUrl, optionSet, callbackAutocomplete, 'json').error(acError);
+                        $.get(baseUrl, optionSet, callbackAutocomplete, 'json').error(this.error);
                     }
                 }
             }
